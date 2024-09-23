@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .li {
+    @apply text-stone-500 font-normal cursor-pointer py-1.5;
+  }
+
+  .icon {
+    @apply text-stone-400  cursor-pointer;
+  }
+  .check {
+    @apply hover:bg-stone-700 hover:px-2 hover:py-4;
+  }
+  .li.active {
+    @apply border-b-2 border-b-blue-700 py-2.5 text-blue-700 transition-all duration-300 hover:text-blue-300;
+  }
+  .type {
+    @apply text-lg  rounded-full px-1 py-2 text-center  w-[70px];
+  }
+}

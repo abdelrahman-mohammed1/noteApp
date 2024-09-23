@@ -1,0 +1,82 @@
+box shadow in tailwind 
+shadow-sm 
+shadow 
+shadow-md =>shadow-md
+shadow-lg 
+shadow-xl 
+shadow-2xl 
+shadow-inner  الي هو بيكون لي جوها box-shadown:inset 0 2px 4px 0 rgb(color) 
+shadow-none   
+
+shadow custom value is 
+shadow-[0px_0px_0px_0px_rgba(color)] 
+
+@layer components{
+    .li{ 
+        @apply tailwind code 
+    }
+} 
+
+when use Link or NavLink must put this inside the Browser Router Must
+
+when use React-Route-dom must put Link and NavLink inside the <BrowserRouter></BrowserRouter> components 
+
+max-width in tailwind is max-w-[custom value] 
+
+in textarea we can added resize to none 
+
+عشان اعمل الحركه بتاعت ال background دي بعمله عن طريق اعمل عنصر اب 
+واديله في البدايه position absolute 
+بعد كده اعمله inset-0 
+بعد كده اديله ال background color 
+بعد كده اخليه في النص عن طريق الفلكس 
+<div className='absolute inset-0 flex items-center justify-center bg-stone-700/50'> 
+
+capitalize 
+capitalize 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza 
+capitaliza  
+Write A Dervied State to search in Posts
+const searchResult = posts.length>0?posts.filter((p)=>`${p.title}`.toLowerCase().inCludes(searchQuery.toLowerCase()))
+  const searchedPosts =
+    searchQuery.length > 0
+      ? posts.filter((post) =>
+          `${post.title} ${post.body}`
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase())
+        )
+      : posts;
+
+
+const searchRes = searchQuery.length>0 ? 
+                   posts.filter((post)=>`${title} ${a}`.toLowerCase().includes(searchQuery.toLowerCase())):posts ;  
+
+
+
+to Store Item in the Local Storage and in Every Update in this value you need to Stored it in the LocalStorage you must using  
+useEffect Hook to make this 
+useEffect(function(){ 
+  LocalStorage.setItem('key' , JSON.Stringfy(nameVar))
+} , nameVar) 
+
+to store the item in the Local Host you must make this 
+useEffect(funciton (){ 
+  localStorage.setItem('key'  , JSON.stringfy(value))
+}, [value]) 
+
+const [watch  , setWatched] = useWathced(function(){
+  const store = localStorage.getItem('key') 
+  return Json.parse(store)
+})
